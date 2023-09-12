@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "miragejs": "^0.1.47",
     "react-refresh": "^0.14.0"
   }
 }
