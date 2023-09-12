@@ -1,14 +1,13 @@
 import React from "react";
 import useSWR from "swr";
 import Eventitem from "./Eventitem";
-import { getEvents } from "./EventHelper";
 import { fetcher } from "./SwrHelper";
 
 export default function Eventlist() {
   const { data } = useSWR("http://localhost:3333/events", fetcher);
 
   if (!data) {
-    return <div className="container mt-5">Loading ....</div>;
+    return <div className="container mt-5">Loading ...</div>;
   }
 
   return (
